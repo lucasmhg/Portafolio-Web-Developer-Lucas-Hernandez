@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Webpage Lucas</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id='navbar'>
+      <ul class='nav-list'>
+        <a href="#welcome-section">About</a>
+      </ul>
+      <ul class='nav-list'>
+        <a href="#projects">Projects</a>
+      </ul>
+      <ul class='nav-list'>
+        <a href="#contact">Contact</a>
+      </ul>
+    </nav>
+    <section id='welcome-section'>
+      <h1>Welcome, I am <span style="color:rgb(191, 255, 0)">Lucas Hernández</span></h1>
+      <p>and this is my portfolio as a web developer</p>
+    </section>
+    <section id='projects'>
+      <h2>My Projects</h2>
+      <div class='project-container'>
+        <article>
+        <a href="https://lucasmhg.github.io/Landing-Page/" class='project-tile' target="_blank">
+            <img class="image" src="./Assets/landing page.png" alt="Landing-Page">
+            <h4>Landing page</h4>
+        </a>
+        </article>
+        <article>
+        <a href="https://lucasmhg.github.io/Tribute-Page/" class='project-tile' target="_blank">
+            <img class="image" src="./Assets/Tribute Page.png" alt="Tribute-Page">
+            <h4>Tribute Page</h4>
+        </a>
+      </article>
+      <article>
+        <a href="https://lucasmhg.github.io/Flor/" class='project-tile' target="_blank">
+            <img class="image" src="./Assets/Flower.png" alt="Flower">
+            <h4>Flower</h4>
+        </a>
+      </article>
+        <article>
+        <a href="https://lucasmhg.github.io/Magazine/" class='project-tile' target="_blank">
+            <img class="image" src="./Assets/magazine.png" alt="Magazine">
+            <h4>Magazine</h4>
+        </a>
+      </article>
+        <article>
+        <a href="https://lucasmhg.github.io/Job-Application-Survey-Form/" class='project-tile' target="_blank">
+            <img class="image" src="./Assets/Job Survey.png" alt="Job-Application-Survey-Form">
+            <h4>Job Survey</h4>
+        </a>
+      </article>
+        <article>
+        <a href="https://lucasmhg.github.io/Berserk-Page/" class='project-tile' target="_blank">
+            <img class="image" src="./Assets/Berserk Page.png" alt="Berserk-Page">
+            <h4>Berserk Page</h4>
+        </a> 
+      </article>       
+      </div>
+    </section>
+    <section id='contact'>
+        <div class="contact-div">
+            <h2>Let's work together, <br>contact me</h2>
+            <p>
+                You can also email me directly.
+                <br>lucasmhg1@gmail.com
+            </p>
+            <br>
+            <a id='profile-link' target='_blank'>GitHub</a>
+        </div>
+        <div class="form-div">
+            <form action="" method="post" id="form" class="form">
+                <input type="text" placeholder="Full Name" required class="name">
+                <input id="email_address" type="email" placeholder="Email Address" name="email" class="email" required>
+                <textarea name="message" required placeholder="Your Message" class="message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+  </body>
