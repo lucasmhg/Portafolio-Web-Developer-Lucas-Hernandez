@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+  }
+
 body { 
     font-family: Arial, sans-serif; 
     margin: 0; 
@@ -18,7 +22,9 @@ body * {
     background-color: #371B58; 
     width: 100vw;
     height: 60px;
-    gap: 8px
+    gap: 1rem;
+    position: fixed;
+    top: 0;
 }
 
 #navbar a { 
@@ -37,12 +43,6 @@ body * {
     color: black;
 } 
 
-#nav
-{
-   position: fixed;
-   top: 0;
-}
-
 #welcome-section {
     display: flex;
     flex-direction: column;
@@ -50,7 +50,9 @@ body * {
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background: #4C3575;
+    background: linear-gradient(
+        #4C3575 80%, 
+        #5B4B8A);
     color: #ffffff;
 }
 
@@ -61,9 +63,12 @@ body * {
 
 #projects {
     text-align: center;
-    background: #5B4B8A;
+    background: linear-gradient( 
+        #5B4B8A 80%,
+        #7858A6);
     padding: 1rem 0rem;
     width: 100vw;
+    height: 150vh;
 }
 
 #projects h2 {
@@ -73,7 +78,7 @@ color: white;
 .project-container {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px 60px;
+    gap: 1rem 3rem;
     margin: 1.5rem;
 }
 
@@ -94,7 +99,7 @@ color: white;
     display:flex;
     flex-direction: row;
     gap: 5rem;
-    height: 100vh;
+    height: 70vh;
 }
 
 .contact-div {
@@ -121,23 +126,29 @@ form{
 
 #projects a {  
     text-decoration: none;
-    margin: 15px 0px;
 } 
 
 article {
-    padding: 10px 10px 40px;
+    padding: 1em 1em 3em;
     background: #371B58;
     border-radius: 10px;
+    margin: 8px;
+    transition: .4s;
+}
+
+article:hover {
+    transform: scale(1.175);
+    background-color: black;
 }
 
 #projects a h4 { 
     color: white; 
     text-decoration: none; 
-    padding: 10px; 
+    padding: .7rem;
+    color: greenyellow
 } 
 
 #projects h2 {
-    padding: 30px 0 20px 0;
     font-size: 35px;
 }
 
@@ -188,5 +199,17 @@ button:hover {
     color: greenyellow;
 }
 
+.icon-cont {
+    display: flex;
+    gap: 30px
+}
 
+.icon{
+    width: 40px;
+    display: flex;
+    transition: .4s;
+}
 
+.icon:hover {
+    transform: scale(1.6);
+}
